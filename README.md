@@ -1,5 +1,5 @@
 # Wordpress-Rets
-## How to  use RETS server to pull real estate listings, photos and other data made available from an MLS system in wordpress
+## How to  use RETS server to pull real estate listings, photos and other data made and use in wordpress
 
 Git Clone above files in wordpress folder or name the folder cron.
 Cron.php is main file you need cridential 
