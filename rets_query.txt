@@ -1,0 +1,14 @@
+A	A	Active
+B	B	Backup Contract-Call LA
+C	C	Cancelled
+CS	CS	Closed Sale
+I	I	Incoming
+PS	PS	Pending Sale
+Q	Q	Terminated
+R	R	Rented
+T	T	Temp Off Market
+W	W	Withdrawn
+X	X	Expired
+
+Following status available which one we need to include 
+i think all other than expired
