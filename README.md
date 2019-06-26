@@ -12,21 +12,20 @@ https://retsmd.com/ here
 Above site play an importan role in over all development
 
 Simple example to get list of properties
-
+<?php
 $property_classes = array('Listing');
 $count = 1;
 foreach ($property_classes as $class_name) {
-	//echo $list_date = "2015-06-15-2015-07-15";
-			$search = $rets->SearchQuery("Property",$class_name,"(MatrixModifiedDT=$list_date)",array( 'Format' => 'COMPACT-DECODED', 'Count' => 1, 'StandardNames' => 0));			
-			echo "    +  $class_name Total found: {$rets->TotalRecordsFound()}<br>\n";	
-				$mcount=1;
-				while ($listing = $rets->FetchRow($search))
-				{
-					echo "<pre>";
-					print_R($listing);
-					echo "</pre>";
-        }
+	$list_date = "2015-06-15-2015-07-15";
+	$search = $rets->SearchQuery("Property",$class_name,"(MatrixModifiedDT=$list_date)",array( 'Format' => 'COMPACT-DECODED', 'Count' => 1, 'StandardNames' => 0));			
+	while ($listing = $rets->FetchRow($search))
+	{
+		echo "<pre>";
+		print_R($listing);
+		echo "</pre>";
+	}
 }
+?>
 
 Let me know if you need more help 
 Email address : navalkishor2005@gmail.com
